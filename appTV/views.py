@@ -47,7 +47,7 @@ def all_show(request):
 def tv_show(request,id):
     tv_id = get_show_id(id)
     theshows =all_the_shows()
-    return render(request,"Tvshows.html",{'tv_id':tv_id,'theshows':theshows})
+    return render(request,"tvshows.html",{'tv_id':tv_id,'theshows':theshows})
 
 #for deleteing a show from existing
 def delete_show(request,id):
